@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#102635">
+  <meta name="description" content="KairoLabs — monitoreo IoT para la conservación segura de medicamentos.">
+  <title>KairoLabs Mobile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#inicio" aria-label="KairoLabs, inicio">
+      <img src="https://raw.githubusercontent.com/1ASI0732-2620-9082-Aether-System/KairoLabs-Landing-Page/main/Imagenes/Kairo-Labs-Logo-sin-fondo.png" alt="">
+      <span>Kairo<b>Labs</b></span>
+    </a>
+    <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="mobileNav" aria-label="Abrir menú"><i></i><i></i></button>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Navegación principal">
+      <div class="nav-head"><span>Menú</span><button id="menuClose" aria-label="Cerrar menú">×</button></div>
+      <a href="#inicio">Inicio <span>01</span></a><a href="#nosotros">Nosotros <span>02</span></a>
+      <a href="#tecnologia">Tecnología <span>03</span></a><a href="#sectores">Sectores <span>04</span></a>
+      <a href="#planes">Planes <span>05</span></a>
+      <a class="nav-cta" href="https://kairo-labs-frontend.vercel.app/" target="_blank" rel="noreferrer">Comienza ahora <b>→</b></a>
+    </nav>
+  </header>
+  <div class="nav-scrim" id="navScrim"></div>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <span class="eyebrow light"><i></i> Conservación farmacéutica · IoT</span>
+        <h1>Alertas en tiempo real para hospitales, farmacias y distribución</h1>
+        <p>Temperatura, humedad y luz bajo control: menos merma, más trazabilidad y cumplimiento DIGEMID/MINSA.</p>
+        <a class="button primary" href="https://kairo-labs-frontend.vercel.app/" target="_blank" rel="noreferrer">¡Comienza hoy mismo! <span>→</span></a>
+      </div>
+      <a class="scroll-cue" href="#partners" aria-label="Continuar"><span></span>Desliza</a>
+    </section>
+
+    <section class="partners" id="partners">
+      <div><span class="eyebrow">Marco regulatorio</span><h2>Respaldados por <em>instituciones</em> líderes</h2></div>
+      <div class="logo-rail" aria-label="Instituciones reguladoras">
+        <div class="logo-track">
+          <img src="https://raw.githubusercontent.com/1ASI0732-2620-9082-Aether-System/KairoLabs-Landing-Page/main/Imagenes/Empresas/Cenares-removebg-preview.png" alt="CENARES">
+          <img src="https://raw.githubusercontent.com/1ASI0732-2620-9082-Aether-System/KairoLabs-Landing-Page/main/Imagenes/Empresas/Digemid-removebg-preview.png" alt="DIGEMID">
+          <img src="https://raw.githubusercontent.com/1ASI0732-2620-9082-Aether-System/KairoLabs-Landing-Page/main/Imagenes/Empresas/Minsa-removebg-preview.png" alt="MINSA">
+          <img src="https://raw.githubusercontent.com/1ASI0732-2620-9082-Aether-System/KairoLabs-Landing-Page/main/Imagenes/Empresas/Susalud-removebg-preview.png" alt="SUSALUD">
+        </div>
+      </div>
+    </section>
+
+    <section class="about dark-section" id="nosotros">
+      <span class="eyebrow light reveal">El proyecto</span>
+      <h2 class="reveal">Soluciones tecnológicas para la conservación de medicamentos</h2>
+      <p class="lead reveal"><strong>Aether System</strong> es el equipo académico de la UPC detrás de <strong>KairoLabs</strong>: una plataforma IoT construida con criterios de verificación, validación y entrega continua.</p>
+      <div class="accordion reveal">
+        <article class="open"><button>01 <b>Misión</b><span>+</span></button><div><p>Diseñar plataformas que garanticen la conservación adecuada de medicamentos mediante monitoreo continuo de temperatura, humedad y luz.</p></div></article>
+        <article><button>02 <b>Visión</b><span>+</span></button><div><p>Modernizar la logística farmacéutica en el Perú con IoT, arquitectura orientada a dominios y pipelines de DevOps.</p></div></article>
+        <article><button>03 <b>Equipo académico</b><span>+</span></button><div><p>Aether System es el equipo de la UPC del curso Diseño de Experimentos que construye KairoLabs.</p></div></article>
+      </div>
+    </section>
+
+    <section class="technology" id="tecnologia">
+      <div class="section-heading reveal"><span class="eyebrow">Monitoreo 360°</span><h2>Tecnología inteligente</h2><p>Telemetría IoT, dashboards, alertas ante desviaciones e históricos auditables, todo en un solo lugar.</p></div>
+      <div class="feature-scroll reveal" aria-label="Funciones de KairoLabs">
+        <article><span class="feature-icon temp">°C</span><small>01</small><h3>Temperatura</h3><p>Control para vacunas y biológicos en rangos críticos de 2 °C a 8 °C.</p></article>
+        <article><span class="feature-icon">◒</span><small>02</small><h3>Humedad</h3><p>Evita degradación química y proliferación de microorganismos.</p></article>
+        <article><span class="feature-icon">☼</span><small>03</small><h3>Iluminación</h3><p>Protección contra la fotodegradación de medicamentos sensibles.</p></article>
+        <article><span class="feature-icon">⌁</span><small>04</small><h3>Conectividad 24/7</h3><p>Alertas inmediatas vía IoT para responder a tiempo.</p></article>
+      </div>
+      <div class="swipe-hint">Desliza para explorar <span>→</span></div>
+      <div class="impact reveal">
+        <span class="eyebrow light">Resultados esperados</span><h2>Decisiones más inteligentes. Menos riesgo operativo.</h2>
+        <div class="metrics"><div><b>&lt; 5 min</b><span>Respuesta ante alertas</span></div><div><b>24/7</b><span>Telemetría continua</span></div><div><b>+30%</b><span>Mejor trazabilidad</span></div><div><b>100%</b><span>Históricos auditables</span></div></div>
+      </div>
+    </section>
+
+    <section class="sectors" id="sectores">
+      <div class="section-heading reveal"><span class="eyebrow">Sectores objetivo</span><h2>Implementación estratégica</h2><p>Diseñado para quienes protegen medicamentos todos los días.</p></div>
+      <article class="sector-card reveal"><img src="https://raw.githubusercontent.com/1ASI0732-2620-9082-Aether-System/KairoLabs-Landing-Page/main/Imagenes/section_3.jpeg" alt="Personal operativo en almacén farmacéutico"><div><small>SEGMENTO 01</small><h3>Personal operativo de almacenes farmacéuticos</h3><p>Alertas accionables para supervisar temperatura, humedad y luz en el día a día.</p><ul><li>Tiempo real</li><li>Alertas</li><li>Cadena de frío</li></ul></div></article>
+      <article class="sector-card reveal"><img src="https://raw.githubusercontent.com/1ASI0732-2620-9082-Aether-System/KairoLabs-Landing-Page/main/Imagenes/Hospital-meditrack.jpeg" alt="Gestores farmacéuticos"><div><small>SEGMENTO 02</small><h3>Gestores y responsables de farmacia</h3><p>Evidencia auditable y supervisión multi-sede para tomar decisiones con confianza.</p><ul><li>Auditoría</li><li>DIGEMID / MINSA</li><li>Multi-sede</li></ul></div></article>
+    </section>
+
+    <section class="statement dark-section reveal">
+      <span class="pulse">●</span><h2>Conecta almacén, equipo y evidencia</h2><p>KairoLabs une el piso del almacén, el dashboard ejecutivo y la telemetría IoT para actuar a tiempo.</p>
+      <div class="statement-image"><img src="https://raw.githubusercontent.com/1ASI0732-2620-9082-Aether-System/KairoLabs-Landing-Page/main/Imagenes/section_2.jpeg" alt="Operación farmacéutica"><span>Control integral · IoT 24/7</span></div>
+    </section>
+
+    <section class="pricing" id="planes">
+      <div class="section-heading reveal"><span class="eyebrow">Inversión inteligente</span><h2>Planes de monitoreo</h2><p>Empieza pequeño y escala cuando estés listo.</p></div>
+      <div class="pricing-scroll reveal">
+        <article class="price-card"><span class="plan">PILOTO</span><h3>$0<small>/mes</small></h3><p>Valida el impacto en una cámara fría.</p><ul><li>✓ 1 sensor · 1 área</li><li>✓ 14 días de prueba</li><li>✓ Alertas por email</li><li>✓ Onboarding incluido</li></ul><a href="#contacto">Probar ahora</a></article>
+        <article class="price-card featured"><span class="badge">RECOMENDADO</span><span class="plan">PROFESIONAL</span><h3>$149<small>/mes</small></h3><p>Para hospitales y centros de distribución.</p><ul><li>✓ Varias áreas</li><li>✓ Alertas SMS / WhatsApp</li><li>✓ 1 año de historial</li><li>✓ Reportes y dashboards</li></ul><a href="https://kairo-labs-frontend.vercel.app/" target="_blank" rel="noreferrer">Comenzar ahora</a></article>
+        <article class="price-card"><span class="plan">HOSPITALARIO</span><h3>$249<small>/mes</small></h3><p>Para varias cámaras, pabellones y roles.</p><ul><li>✓ Rangos 2–8 °C</li><li>✓ Evidencia para auditorías</li><li>✓ Alertas por umbral</li><li>✓ Soporte clínico</li></ul><a href="#contacto">Elegir plan</a></article>
+      </div>
+      <p class="secure">◇ Cifrado AES-256 y cumplimiento normativo farmacéutico</p>
+    </section>
+
+    <section class="cta" id="contacto">
+      <span class="eyebrow light">Empieza hoy</span><h2>Almacenes más inteligentes.<br>Conservación más segura.</h2><p>Hecho para quien cuida medicamentos.</p>
+      <a class="button white" href="https://kairo-labs-frontend.vercel.app/" target="_blank" rel="noreferrer">Comenzar <span>→</span></a>
+      <ul><li>Sin permanencia</li><li>Configuración en minutos</li><li>Soporte en español</li></ul>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#inicio"><img src="https://raw.githubusercontent.com/1ASI0732-2620-9082-Aether-System/KairoLabs-Landing-Page/main/Imagenes/Kairo-Labs-Logo-sin-fondo.png" alt=""><span>Kairo<b>Labs</b></span></a><p>Monitoreo IoT para una conservación farmacéutica segura.</p><nav><a href="#tecnologia">Tecnología</a><a href="#sectores">Sectores</a><a href="#planes">Planes</a><a href="#nosotros">Nosotros</a></nav><small>© 2026 KairoLabs · Aether System (UPC)</small></footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

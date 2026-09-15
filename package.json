@@ -1,0 +1,13 @@
+{
+  "name": "kairolabs-mobile-landing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node init && vite --host 0.0.0.0",
+    "build": "node init && vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.5"
+  }
+}

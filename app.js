@@ -1,0 +1,6 @@
+const body=document.body,menuButton=document.querySelector('#menuButton'),menuClose=document.querySelector('#menuClose'),scrim=document.querySelector('#navScrim'),topbar=document.querySelector('#topbar');
+function menu(open){body.classList.toggle('menu-open',open);menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú')}
+menuButton.addEventListener('click',()=>menu(!body.classList.contains('menu-open')));menuClose.addEventListener('click',()=>menu(false));scrim.addEventListener('click',()=>menu(false));document.querySelectorAll('.mobile-nav a').forEach(a=>a.addEventListener('click',()=>menu(false)));
+addEventListener('scroll',()=>topbar.classList.toggle('scrolled',scrollY>20),{passive:true});
+document.querySelectorAll('.accordion article').forEach(item=>item.querySelector('button').addEventListener('click',()=>{document.querySelectorAll('.accordion article').forEach(other=>other.classList.toggle('open',other===item&&!item.classList.contains('open')))}));
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
